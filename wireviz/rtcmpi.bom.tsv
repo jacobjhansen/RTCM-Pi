@@ -1,0 +1,7 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 2 wires	0	m	W2, W3
+2	Cable, 6 wires	0	m	W1
+3	Connector, GPS-RTK-SMA RTCM, 6 pins	1		X2
+4	Connector, GPS-RTK-SMA UART, 9 pins	1		X3
+5	Connector, RFD900x-US, 16 pins	1		X4
+6	Connector, Raspberry Pi 4b, 8 pins	1		X1

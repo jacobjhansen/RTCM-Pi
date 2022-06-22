@@ -1,0 +1,38 @@
+connectors:
+  X1:
+    type: Raspberry Pi 4b 
+    pinlabels: [1 - 3v3, 4 - 5v, 6 - GND, 9 - GND, 21 - RX - UART4, 24 - TX - UART4, 32 - TX - UART5, 33 - RX - UART5]
+  X2:
+    type: GPS-RTK-SMA RTCM 
+    pinlabels: [GND, N/A, 3V3, RX2, TX2, BLANK]
+  X3:
+    type: GPS-RTK-SMA UART
+    pinlabels: [GND, 5V, 3V3, TX2, RX2, CS, RX, TX, SCK]
+  X4:
+    type: RFD900x-US
+    pinlabels: [GND, GND, CTS, Vcc, Vusb, Vusb, RX, P3.4, TX, P3.3, RTS, P1.3, P1.0, P1.2, P1.1, GND]
+
+
+cables:
+  W1:
+    wirecount: 6
+
+  W2:
+    wirecount: 2
+
+  W3:
+    wirecount: 2
+
+connections:
+  -
+    - X1: [1,4,5,6,7,8]
+    - W1: [1,2,3,4,5,6]
+    - X3: [3,1,8,7,5,4]
+  -
+    - X1: [2,3]
+    - W2: [1,2]
+    - X4: [5,1]
+  -
+    - X2: [4,5]
+    - W3: [1,2]
+    - X4: [9,7]
