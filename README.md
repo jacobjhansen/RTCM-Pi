@@ -1,5 +1,5 @@
 # RTCM-Pi
-GNSS Base Station based on Raspberry Pi 4B
+GNSS Base Station based on Raspberry Pi 4B **NO LONGER MAINTAINED**
 
 ![RTCM-Pi Wiring Diagram](images/RTCM-Pi.png "RTCM-Pi Design")
 
